@@ -30,10 +30,10 @@ h2 {
   border-radius: 5px;
   padding: 20px;
   background-color: whitesmoke;
-  transition: transform 0.3s ease; /* Add transition for smooth scaling */
+  transition: transform 0.3s ease; 
 }
 .book-card:hover {
-  transform: scale(1.1); /* Increase scale for the hovered card */
+  transform: scale(1.1);
 }
 
 .book-card h3 {

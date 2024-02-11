@@ -15,7 +15,6 @@ const AddBook = () => {
   const [error, setError] = useState('');
 
   useEffect(() => {
-    // Fetch username from local storage and set it in the form data
     const storedUsername = localStorage.getItem('username');
     if (storedUsername) {
       setFormData({ ...formData, username: storedUsername });

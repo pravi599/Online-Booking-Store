@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
-import UpdateDelete from './UpdateDeleteBook'; // Import the UpdateDelete component
+import UpdateDelete from './UpdateDeleteBook'; 
 import './Books.css';
 
 const Books = () => {
@@ -53,7 +53,7 @@ const Books = () => {
             <p><strong>Genre:</strong> {book.genre}</p>
             <p><strong>ISBN:</strong> {book.isbn}</p>
             <p><strong>Publish Date:</strong> {new Date(book.publishDate).toLocaleDateString()}</p>
-            <UpdateDelete bookId={book.bookId} /> {/* Pass bookId to UpdateDelete component */}
+            <UpdateDelete bookId={book.bookId} /> 
           </div>
         ))}
       </div>

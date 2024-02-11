@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import axios from 'axios'; // You need axios to make HTTP requests
+import axios from 'axios';
 
 const GetAllBooks = () => {
   const [books, setBooks] = useState([]);

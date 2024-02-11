@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import axios from 'axios';
 import './UpdateDelete.css';
-import './Books.css'; // Import your CSS file for styling
+import './Books.css';
 
 const UpdateDelete = ({ bookId }) => {
   const [title, setTitle] = useState('');
@@ -35,7 +35,7 @@ const UpdateDelete = ({ bookId }) => {
       const book = response.data;
 
       await axios.put(`https://localhost:7170/api/Book/${bookId}`, {
-        ...book, // Include existing book properties
+        ...book,
         title,
         author,
         genre,
@@ -54,7 +54,6 @@ const UpdateDelete = ({ bookId }) => {
     try {
       await axios.delete(`https://localhost:7170/api/Book/${bookId}`);
       alert('Book deleted successfully!');
-      // Optionally, you can remove the book from the list or perform any other action after deletion
     } catch (error) {
       console.error('Error deleting book:', error);
     }

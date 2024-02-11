@@ -17,7 +17,7 @@ const Login = () => {
 
     const handleChange = (e) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
-        setErrors({ ...errors, [e.target.name]: "" }); // Clear the error when the user starts typing
+        setErrors({ ...errors, [e.target.name]: "" }); 
     };
 
     const checkUserData = () => {
@@ -51,25 +51,18 @@ const Login = () => {
         if (!checkUserData()) return;
 
         try {
-            // Use the appropriate API endpoint for login
             const response = await axios.post("https://localhost:7170/api/User/Login", formData);
 
-            // Check if the response contains a token
             if (response.data && response.data.token) {
                 const token = response.data.token;
                 const username = response.data.username;
                 const role = response.data.role;
 
-
-                // Store the token in local storage
                 localStorage.setItem("token", token);
                 localStorage.setItem("username", username);
                 localStorage.setItem("role", role);
                 setLoginResult({ success: true });
                 alert("Login Successful!");
-
-                // // Force a page reload upon successful login
-                // window.location.reload();
                 navigate('/Home');
                 window.location.reload();
             } else {
@@ -80,13 +73,8 @@ const Login = () => {
             console.log(err);
             setFormData(initialFormData);
         }
-        // } finally {
-        //     setFormData(initialFormData); // Clear the form data after both success and failure
-        // }
     };
     const setLoggedIn = (value) => {
-        // Custom function to update the isLoggedIn state
-        // This function can be defined in the parent component
     };
 
     return (
