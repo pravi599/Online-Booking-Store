@@ -67,3 +67,4 @@ C:\Users\2000112352\OneDrive - Hexaware Technologies\Desktop\Practice Project\Bo
 C:\Users\2000112352\OneDrive - Hexaware Technologies\Desktop\Practice Project\BookStoreSolution\BookStoreApplication\obj\Debug\net6.0\BookStoreApplication.pdb
 C:\Users\2000112352\OneDrive - Hexaware Technologies\Desktop\Practice Project\BookStoreSolution\BookStoreApplication\obj\Debug\net6.0\BookStoreApplication.genruntimeconfig.cache
 C:\Users\2000112352\OneDrive - Hexaware Technologies\Desktop\Practice Project\BookStoreSolution\BookStoreApplication\obj\Debug\net6.0\ref\BookStoreApplication.dll
+C:\Users\2000112352\OneDrive - Hexaware Technologies\Desktop\Practice Project\BookStoreSolution\BookStoreApplication\obj\Debug\net6.0\BookStoreApplication.sourcelink.json

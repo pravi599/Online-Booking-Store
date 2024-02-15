@@ -93,7 +93,7 @@ if (app.Environment.IsDevelopment())
 }
 app.UseCors("reactApp");
 app.UseHttpsRedirection();
-
+app.UseAuthentication();
 app.UseAuthorization();
 
 app.MapControllers();
